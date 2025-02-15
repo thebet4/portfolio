@@ -8,8 +8,6 @@ export function Welcome() {
     <main
       className="
           background-grid
-          bg-cover bg-center bg-fixed bg-repeat
-          px-10 py-6
           h-screen
           snap-y snap-mandatory overflow-y-auto
       "

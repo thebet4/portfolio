@@ -23,6 +23,7 @@
   --card: 0.269 0 0;
 
   --grid-background: url("./assets/images/background-dark.png");
+  --grid-background-reverse: url("./assets/images/background-light.png");
 }
 
 [data-theme="light"] {
@@ -37,6 +38,7 @@
   --card: 0.922 0 0;
 
   --grid-background: url("./assets/images/background-light.png");
+  --grid-background-reverse: url("./assets/images/background-dark.png");
   --mask-imgage: url("./assets/images/mask.svg");
 }
 
@@ -67,4 +69,16 @@ body {
 
 .background-grid {
   background-image: var(--grid-background);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+.background-grid-reverse {
+  background-image: var(--grid-background-reverse);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
