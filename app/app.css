@@ -1,8 +1,57 @@
 @import "tailwindcss";
 
+:root {
+  --content: 1 0 0;
+  --background: 0.13 0.028 261.692;
+
+  --border: 0.439 0 0;
+
+  --card: 0.269 0 0;
+
+  --grid-background: url("./assets/images/background-dark.png");
+}
+
+[data-theme="dark"] {
+  --content: 1 0 0;
+  --content-inverse: 0.122 0 0;
+
+  --background: 0.13 0.028 261.692;
+  --background-inverse: 1 0 0;
+
+  --border: 0.439 0 0;
+
+  --card: 0.269 0 0;
+
+  --grid-background: url("./assets/images/background-dark.png");
+}
+
+[data-theme="light"] {
+  --content: 0.122 0 0;
+  --content-inverse: 1 0 0;
+
+  --background: 1 0 0;
+  --background-inverse: 0.13 0.028 261.692;
+
+  --border: 0.439 0 0;
+
+  --card: 0.922 0 0;
+
+  --grid-background: url("./assets/images/background-light.png");
+  --mask-imgage: url("./assets/images/mask.svg");
+}
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-content: oklch(var(--content));
+  --color-content-inverse: oklch(var(--content-inverse));
+
+  --color-background: oklch(var(--background));
+  --color-background-inverse: oklch(var(--background-inverse));
+
+  --color-card: oklch(var(--card));
+  --color-border: oklch(var(--border));
 }
 
 html,
@@ -12,4 +61,10 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+
+  scroll-behavior: smooth;
+}
+
+.background-grid {
+  background-image: var(--grid-background);
 }

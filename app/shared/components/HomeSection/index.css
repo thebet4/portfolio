@@ -1,0 +1,7 @@
+.mask {
+  position: absolute;
+  mask-image: url("../../../assets//images//mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+  z-index: 1;
+}
