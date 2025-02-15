@@ -1,8 +1,6 @@
-import { useTheme } from "../contexts/themeContext";
+import ThemeButton from "../ThemeButton";
 
 export default function NavBar() {
-  const { handleUpdateTheme, getTheme } = useTheme();
-
   return (
     <header
       className="
@@ -32,18 +30,7 @@ export default function NavBar() {
         </a>
       </div>
 
-      <button
-        onClick={handleUpdateTheme}
-        className="
-            cursor-pointer 
-            fixed right-10 
-            p-4 
-            border rounded-lg border-border hover:bg-card
-            text-content
-          "
-      >
-        {getTheme()}
-      </button>
+      <ThemeButton />
     </header>
   );
 }
