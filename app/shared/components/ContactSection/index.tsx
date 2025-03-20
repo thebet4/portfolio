@@ -23,7 +23,7 @@ export default function ContactSection() {
         <li>🐙 GitHub: {github}</li>
       </ul>
 
-      <p className="mt-8 max-w-[70vw]">
+      <p className="text-content mt-8 max-w-[70vw]">
         Or just book a call through the button below—I’ll get back to you as
         soon as possible! 🚀
       </p>
