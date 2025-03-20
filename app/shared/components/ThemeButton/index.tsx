@@ -72,10 +72,10 @@ export default function ThemeButton() {
       className="
         cursor-pointer 
         fixed right-10 
-        border-2
+        border-1
         border-border
         rounded-md
-        py-2 px-4
+        p-2
       "
     >
       <m.svg

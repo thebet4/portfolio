@@ -1,5 +1,5 @@
 import ContactSection from "~/shared/components/ContactSection";
-import ExperienceSection from "~/shared/components/ExperienceSection";
+import TechSection from "~/shared/components/TechsSection";
 import ExpertiseSection from "~/shared/components/ExpertiseSection";
 import HomeSection from "~/shared/components/HomeSection";
 
@@ -16,7 +16,7 @@ export function Welcome() {
 
       <ExpertiseSection />
 
-      <ExperienceSection />
+      <TechSection />
 
       <ContactSection />
     </main>
